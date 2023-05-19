@@ -1,0 +1,11 @@
+[Unit]
+Description=MQTT Camera
+After=network-online.target
+
+[Service]
+User=ccoupe
+ExecStart=/usr/local/lib/mlmotion/mlmotion.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
